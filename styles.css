@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+/* ===== Dark Theme (default) ===== */
 :root {
   --color-bg: #0b0b0f;
   --color-surface: #15151e;
@@ -15,12 +16,52 @@
   --color-border-hover: rgba(255, 255, 255, 0.12);
   --color-text: #e8e8ed;
   --color-text-secondary: #7c7c8a;
+  --color-heading: #ffffff;
   --color-accent: #3b82f6;
   --color-accent-hover: #5b9aff;
   --color-accent-subtle: rgba(59, 130, 246, 0.1);
+  --color-accent-border: rgba(59, 130, 246, 0.15);
+  --color-accent-border-hover: rgba(59, 130, 246, 0.3);
+  --color-accent-bg-hover: rgba(59, 130, 246, 0.18);
+  --nav-bg: rgba(11, 11, 15, 0.82);
+  --nav-bg-mobile: rgba(11, 11, 15, 0.96);
+  --app-icon-bg: rgba(255, 255, 255, 0.05);
+  --card-shadow: 0 4px 24px rgba(59, 130, 246, 0.06);
+  --bg-glow: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.06), transparent);
+  --selection-bg: rgba(59, 130, 246, 0.3);
+  --selection-color: #fff;
+  --scrollbar-thumb: rgba(255, 255, 255, 0.1);
+  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.18);
   --max-width: 960px;
   --nav-height: 56px;
   --content-padding: clamp(20px, 5vw, 64px);
+}
+
+/* ===== Light Theme ===== */
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-surface: #f5f5f7;
+  --color-surface-hover: #ebebed;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-hover: rgba(0, 0, 0, 0.14);
+  --color-text: #1d1d1f;
+  --color-text-secondary: #6e6e73;
+  --color-heading: #000000;
+  --color-accent: #0071e3;
+  --color-accent-hover: #0077ed;
+  --color-accent-subtle: rgba(0, 113, 227, 0.06);
+  --color-accent-border: rgba(0, 113, 227, 0.12);
+  --color-accent-border-hover: rgba(0, 113, 227, 0.25);
+  --color-accent-bg-hover: rgba(0, 113, 227, 0.1);
+  --nav-bg: rgba(255, 255, 255, 0.88);
+  --nav-bg-mobile: rgba(255, 255, 255, 0.97);
+  --app-icon-bg: rgba(0, 0, 0, 0.04);
+  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --bg-glow: none;
+  --selection-bg: rgba(0, 113, 227, 0.2);
+  --selection-color: #000;
+  --scrollbar-thumb: rgba(0, 0, 0, 0.15);
+  --scrollbar-thumb-hover: rgba(0, 0, 0, 0.25);
 }
 
 html {
@@ -33,15 +74,12 @@ body {
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--color-text);
   background: var(--color-bg);
-  background-image: radial-gradient(
-    ellipse 80% 50% at 50% -20%,
-    rgba(59, 130, 246, 0.06),
-    transparent
-  );
+  background-image: var(--bg-glow);
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 a {
@@ -66,10 +104,11 @@ img {
   top: 0;
   z-index: 100;
   height: var(--nav-height);
-  background: rgba(11, 11, 15, 0.82);
+  background: var(--nav-bg);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--color-border);
+  transition: background 0.3s, border-color 0.3s;
 }
 
 .nav-inner {
@@ -91,7 +130,7 @@ img {
 
 .nav-brand:hover {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-heading);
 }
 
 .nav-links {
@@ -112,9 +151,49 @@ img {
 }
 
 .nav-links a.active {
-  color: #fff;
+  color: var(--color-heading);
   font-weight: 500;
 }
+
+/* Nav right group: theme toggle + hamburger */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ===== Theme Toggle ===== */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 6px;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.theme-toggle:hover {
+  color: var(--color-text);
+  border-color: var(--color-border-hover);
+  background: var(--color-surface);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+/* Show moon in dark mode, sun in light mode */
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+
+[data-theme="light"] .theme-toggle .icon-sun { display: block; }
+[data-theme="light"] .theme-toggle .icon-moon { display: none; }
 
 /* Mobile nav toggle */
 .nav-toggle {
@@ -145,7 +224,7 @@ img {
     right: 0;
     flex-direction: column;
     gap: 0;
-    background: rgba(11, 11, 15, 0.96);
+    background: var(--nav-bg-mobile);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     border-bottom: 1px solid var(--color-border);
@@ -191,7 +270,7 @@ main {
   font-weight: 700;
   letter-spacing: -0.025em;
   margin-bottom: 12px;
-  color: #fff;
+  color: var(--color-heading);
 }
 
 .hero p {
@@ -211,7 +290,7 @@ main {
   font-weight: 600;
   letter-spacing: -0.01em;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--color-heading);
 }
 
 .section h3 {
@@ -270,14 +349,14 @@ main {
 .app-card:hover {
   background: var(--color-surface-hover);
   border-color: var(--color-border-hover);
-  box-shadow: 0 4px 24px rgba(59, 130, 246, 0.06);
+  box-shadow: var(--card-shadow);
 }
 
 .app-icon {
   width: 56px;
   height: 56px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--app-icon-bg);
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -310,7 +389,7 @@ main {
   display: inline-block;
   padding: 10px 22px;
   background: var(--color-accent-subtle);
-  border: 1px solid rgba(59, 130, 246, 0.15);
+  border: 1px solid var(--color-accent-border);
   border-radius: 10px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -319,8 +398,8 @@ main {
 }
 
 .quick-links a:hover {
-  background: rgba(59, 130, 246, 0.18);
-  border-color: rgba(59, 130, 246, 0.3);
+  background: var(--color-accent-bg-hover);
+  border-color: var(--color-accent-border-hover);
   color: var(--color-accent-hover);
   text-decoration: none;
 }
@@ -348,7 +427,7 @@ main {
 }
 
 .faq-item summary:hover {
-  color: #fff;
+  color: var(--color-heading);
 }
 
 .faq-item summary::-webkit-details-marker {
@@ -382,6 +461,7 @@ main {
   border-radius: 16px;
   padding: clamp(24px, 4vw, 36px);
   text-align: center;
+  transition: background 0.3s, border-color 0.3s;
 }
 
 .contact-box p {
@@ -401,6 +481,7 @@ main {
   border-radius: 16px;
   padding: clamp(20px, 3vw, 28px);
   margin-bottom: 16px;
+  transition: background 0.3s, border-color 0.3s;
 }
 
 .instructions h3 {
@@ -430,7 +511,7 @@ main {
   font-weight: 700;
   letter-spacing: -0.025em;
   margin-bottom: 4px;
-  color: #fff;
+  color: var(--color-heading);
 }
 
 .legal .updated {
@@ -473,6 +554,7 @@ main {
   text-align: center;
   font-size: 0.8rem;
   color: var(--color-text-secondary);
+  transition: border-color 0.3s;
 }
 
 .footer-inner {
@@ -514,8 +596,8 @@ main {
 
 /* ===== Selection ===== */
 ::selection {
-  background: rgba(59, 130, 246, 0.3);
-  color: #fff;
+  background: var(--selection-bg);
+  color: var(--selection-color);
 }
 
 /* ===== Scrollbar (Webkit) ===== */
@@ -528,10 +610,10 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--scrollbar-thumb);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.18);
+  background: var(--scrollbar-thumb-hover);
 }
