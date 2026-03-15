@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — Salman Ahmad</title>
+  <meta name="description" content="Get help with iOS applications by Salman Ahmad. FAQs, bug reports, and feature requests.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Salman Ahmad</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="support.html" class="active">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>Support</h1>
+      <p>Find answers to common questions or get in touch for help.</p>
+    </section>
+
+    <section class="section" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+      <details class="faq-item">
+        <summary>The app is not working properly. What should I do?</summary>
+        <div class="faq-answer">
+          <p>First, try closing the app completely and reopening it. If the issue persists, make sure you are running the latest version of the app from the App Store. Restarting your device can also resolve many common issues. If none of these steps help, please contact us with details about the problem.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I update the app?</summary>
+        <div class="faq-answer">
+          <p>Open the App Store on your device, tap your profile icon at the top, and scroll down to see available updates. You can also search for the app by name and tap "Update" if one is available.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is my data safe?</summary>
+        <div class="faq-answer">
+          <p>Yes. We collect only minimal anonymous analytics to improve app performance. We do not collect, store, or share any personally identifiable information. Please see our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Which devices are supported?</summary>
+        <div class="faq-answer">
+          <p>Our apps support iPhones and iPads running the latest major version of iOS/iPadOS and one version prior. Check the app's listing on the App Store for specific compatibility details.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is the app free?</summary>
+        <div class="faq-answer">
+          <p>Pricing details are available on each app's App Store listing. Some apps may be free, while others may require a one-time purchase or offer in-app purchases.</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="section" aria-labelledby="bug-heading">
+      <h2 id="bug-heading">Report a Bug</h2>
+      <div class="instructions">
+        <h3>How to submit a bug report</h3>
+        <p>If you've encountered a bug, please send us an email with the following information so we can investigate:</p>
+        <ol>
+          <li>The name of the app and the version number (found in Settings or the App Store)</li>
+          <li>Your device model (e.g., iPhone 15) and iOS version</li>
+          <li>A clear description of the issue</li>
+          <li>Steps to reproduce the problem, if possible</li>
+          <li>Screenshots or screen recordings, if applicable</li>
+        </ol>
+        <p>Send your report to <a href="mailto:salmanahmad@berkeley.edu?subject=Bug%20Report">salmanahmad@berkeley.edu</a> with the subject line "Bug Report."</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="feature-heading">
+      <h2 id="feature-heading">Request a Feature</h2>
+      <div class="instructions">
+        <h3>How to request a feature</h3>
+        <p>We welcome ideas and suggestions. To submit a feature request:</p>
+        <ol>
+          <li>Describe the feature or improvement you'd like to see</li>
+          <li>Explain how it would help you or improve the app</li>
+          <li>Include any examples or references that might be helpful</li>
+        </ol>
+        <p>Send your request to <a href="mailto:salmanahmad@berkeley.edu?subject=Feature%20Request">salmanahmad@berkeley.edu</a> with the subject line "Feature Request."</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contact Us</h2>
+      <div class="contact-box">
+        <p>Can't find what you're looking for? Reach out directly and we'll get back to you as soon as possible.</p>
+        <a href="mailto:salmanahmad@berkeley.edu">salmanahmad@berkeley.edu</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:salmanahmad@berkeley.edu">Contact</a>
+      </div>
+      <p>&copy; 2026 Salman Ahmad. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      var links = document.querySelector('.nav-links');
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      links.classList.toggle('open');
+      this.setAttribute('aria-expanded', String(!expanded));
+    });
+  </script>
+
+</body>
+</html>

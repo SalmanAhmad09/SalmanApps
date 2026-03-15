@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — Salman Ahmad</title>
+  <meta name="description" content="Terms of service for iOS applications by Salman Ahmad.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Salman Ahmad</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html" class="active">Terms</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="legal">
+    <h1>Terms of Service</h1>
+    <p class="updated">Last Updated: March 15, 2026</p>
+
+    <p>These Terms of Service ("Terms") govern your use of the mobile applications ("Apps") developed and published by Salman Ahmad ("we," "our," or "us"). By downloading, installing, or using any of our Apps, you agree to be bound by these Terms.</p>
+
+    <h2>Acceptance of Terms</h2>
+    <p>By accessing or using our Apps, you confirm that you have read, understood, and agree to these Terms. If you do not agree, please do not use our Apps.</p>
+
+    <h2>Use of Our Apps</h2>
+    <p>Our Apps are provided for your personal, non-commercial use. You agree to use our Apps only for lawful purposes and in accordance with these Terms.</p>
+
+    <h2>Acceptable Use</h2>
+    <p>When using our Apps, you agree not to:</p>
+    <ul>
+      <li>Use the Apps for any unlawful or prohibited purpose</li>
+      <li>Attempt to reverse-engineer, decompile, or disassemble the Apps</li>
+      <li>Modify, adapt, or create derivative works based on the Apps</li>
+      <li>Remove or alter any proprietary notices, labels, or marks on the Apps</li>
+      <li>Use the Apps in a way that could damage, disable, or impair our services</li>
+      <li>Distribute, license, or sell the Apps or any content within them</li>
+    </ul>
+
+    <h2>Intellectual Property</h2>
+    <p>All content, design, graphics, and code within our Apps are owned by Salman Ahmad and are protected by applicable intellectual property laws. You are granted a limited, non-exclusive, non-transferable licence to use the Apps for personal purposes only.</p>
+
+    <h2>Disclaimer of Warranties</h2>
+    <p>Our Apps are provided on an "as is" and "as available" basis without warranties of any kind, either express or implied. We do not warrant that the Apps will be uninterrupted, error-free, or free of harmful components.</p>
+
+    <h2>Limitation of Liability</h2>
+    <p>To the fullest extent permitted by applicable law, Salman Ahmad shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data, profits, or goodwill, arising out of or related to your use of our Apps.</p>
+    <p>In no event shall our total liability exceed the amount you paid, if any, for the App giving rise to the claim.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>Our Apps may contain links to or integrate with third-party services. We are not responsible for the content, privacy practices, or terms of any third-party services. Your use of such services is governed by their respective terms and policies.</p>
+
+    <h2>App Store Terms</h2>
+    <p>Your use of our Apps is also subject to the Apple Media Services Terms and Conditions. In the event of a conflict between these Terms and Apple's terms, Apple's terms shall prevail with respect to your use of the App Store and Apple's services.</p>
+
+    <h2>Modifications to Service</h2>
+    <p>We reserve the right to modify, suspend, or discontinue any of our Apps at any time, with or without notice. We shall not be liable for any modification, suspension, or discontinuation of our Apps.</p>
+
+    <h2>Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. Changes will be posted on this page with a revised "Last Updated" date. Your continued use of our Apps after any changes constitutes acceptance of the updated Terms.</p>
+
+    <h2>Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of Pakistan, without regard to conflict of law principles.</p>
+
+    <h2>Contact Information</h2>
+    <p>If you have any questions about these Terms, please contact us:</p>
+    <p>
+      Salman Ahmad<br>
+      Email: <a href="mailto:salmanahmad@berkeley.edu">salmanahmad@berkeley.edu</a>
+    </p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:salmanahmad@berkeley.edu">Contact</a>
+      </div>
+      <p>&copy; 2026 Salman Ahmad. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      var links = document.querySelector('.nav-links');
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      links.classList.toggle('open');
+      this.setAttribute('aria-expanded', String(!expanded));
+    });
+  </script>
+
+</body>
+</html>
