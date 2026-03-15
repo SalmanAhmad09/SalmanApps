@@ -32,7 +32,7 @@
   --selection-color: #fff;
   --scrollbar-thumb: rgba(255, 255, 255, 0.1);
   --scrollbar-thumb-hover: rgba(255, 255, 255, 0.18);
-  --max-width: 960px;
+  --max-width: 1120px;
   --nav-height: 56px;
   --content-padding: clamp(20px, 5vw, 64px);
 }
