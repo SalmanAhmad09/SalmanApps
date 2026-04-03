@@ -547,6 +547,123 @@ main {
   color: var(--color-text);
 }
 
+.legal h3 {
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  color: var(--color-heading);
+}
+
+.legal h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+/* ===== App Selector (Privacy Page) ===== */
+.app-selector {
+  margin-top: 32px;
+}
+
+.app-selector-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.app-selector-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  padding: 24px 28px;
+  cursor: pointer;
+  transition: background 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.2s;
+  min-width: 130px;
+}
+
+.app-selector-item:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-accent-border-hover);
+  box-shadow: var(--card-shadow);
+  transform: translateY(-2px);
+}
+
+.app-selector-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  background: var(--app-icon-bg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.app-selector-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.icon-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--color-text-secondary);
+}
+
+.app-selector-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+/* ===== Policy Back Button ===== */
+.policy-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 0;
+  margin-bottom: 20px;
+  transition: color 0.2s;
+  font-family: inherit;
+}
+
+.policy-back:hover {
+  color: var(--color-accent-hover);
+}
+
+.policy-app-title {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem) !important;
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+  margin-bottom: 4px !important;
+  color: var(--color-heading) !important;
+}
+
+.policy-date {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 28px;
+}
+
 /* ===== Footer ===== */
 .footer {
   border-top: 1px solid var(--color-border);
