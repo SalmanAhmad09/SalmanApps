@@ -76,17 +76,6 @@
           </div>
           <span class="app-selector-name">Fox Reader</span>
         </button>
-        <button class="app-selector-item" data-app="lightningread" aria-label="View LightningRead privacy policy">
-          <div class="app-selector-icon">
-            <img src="apps/lightningread/icon.png" alt="LightningRead icon" onerror="this.style.display='none';this.parentElement.querySelector('.icon-fallback').style.display='flex'">
-            <div class="icon-fallback" style="display:none;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="32" height="32">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-              </svg>
-            </div>
-          </div>
-          <span class="app-selector-name">LightningRead</span>
-        </button>
       </div>
     </div>
 
@@ -101,264 +90,15 @@
       </button>
 
       <h2 class="policy-app-title">Fox Reader — Privacy Policy</h2>
-      <p class="policy-date">Effective Date: April 3, 2026 &middot; Last Updated: April 3, 2026</p>
-
-      <p>Fox Reader ("the App," "we," "our," or "us") is an iOS e-book reader application developed by Salman Ahmad. This Privacy Policy describes how Fox Reader collects, uses, stores, and shares information when you use our application. We are committed to protecting your privacy and being transparent about our data practices.</p>
-
-      <h3>1. Information We Collect</h3>
-
-      <h4>1.1 Information You Provide</h4>
-      <p>Fox Reader stores the following data that you create or provide while using the App:</p>
-      <ul>
-        <li><strong>Imported Books:</strong> EPUB and PDF files you import into the App, stored locally on your device.</li>
-        <li><strong>Reading Progress:</strong> Your current position, chapter, and percentage completion for each book.</li>
-        <li><strong>Highlights and Notes:</strong> Text highlights (with color preferences) and personal notes you create within books.</li>
-        <li><strong>Ratings and Reviews:</strong> Star ratings and category-based ratings (writing quality, personal impact, originality, etc.) you assign to books.</li>
-        <li><strong>Tags and Collections:</strong> Custom tags, collections, and organizational structures you create for your library.</li>
-        <li><strong>Vocabulary Words:</strong> Words you save to your vocabulary list, including mastery levels.</li>
-        <li><strong>Reading Logs:</strong> Manual reading session entries including duration, pages read, and optional notes.</li>
-        <li><strong>Book Tracking Data:</strong> Books you track (to-read, reading, completed, paused, did-not-finish), including start/finish dates, ratings, and personal notes.</li>
-        <li><strong>Goodreads Import Data:</strong> If you choose to import a Goodreads CSV export, the App parses this file locally on your device to import your book data. The CSV file is not transmitted to any server.</li>
-      </ul>
-      <p><strong>All of the above data is stored locally on your device using Apple's SwiftData framework.</strong> If you have iCloud enabled, this data may sync to your personal iCloud account (see Section 4.5).</p>
-
-      <h4>1.2 Automatically Collected Information</h4>
-      <ul>
-        <li><strong>Usage Analytics:</strong> We collect anonymous, non-identifying usage data through Firebase Analytics to understand how the App is used and to improve the experience. This includes events such as: books imported (file type and word count), reading sessions (duration, words read, average reading speed), features used (summaries, vocabulary games, book tracking), subscription interactions (paywall views, subscription starts), and app performance metrics (book load times). These analytics are <strong>not linked to your identity</strong>.</li>
-        <li><strong>Reader Preferences:</strong> Your chosen font, theme, reading speed (words per minute), and display settings are stored locally using UserDefaults.</li>
-      </ul>
-
-      <h4>1.3 Information We Do Not Collect</h4>
-      <ul>
-        <li><strong>Personal Identification:</strong> We do not collect your name, email address, phone number, or any personally identifiable information. There is no user account, registration, or login.</li>
-        <li><strong>Location Data:</strong> We do not access or collect your location.</li>
-        <li><strong>Contacts, Photos, or Calendar:</strong> We do not access your contacts, photo library, or calendar.</li>
-        <li><strong>Advertising Identifiers:</strong> We do not collect or use Apple's Identifier for Advertisers (IDFA). Advertising is disabled in the App.</li>
-        <li><strong>Cross-Site Tracking:</strong> We do not track you across other apps or websites. Our Privacy Manifest (<code>PrivacyInfo.xcprivacy</code>) explicitly declares <code>NSPrivacyTracking</code> as <code>false</code> with no tracking domains.</li>
-        <li><strong>Book Content:</strong> The text content of your books is never transmitted to any external server. All text processing (including AI summaries) occurs entirely on your device.</li>
-      </ul>
-
-      <h4>1.4 Camera Access</h4>
-      <p>The App requests camera permission solely for scanning book barcodes (ISBN lookup) when adding books to your tracking list. Camera data is processed in real time for barcode detection only; no images or video are captured, stored, or transmitted.</p>
-
-      <h3>2. How We Use Information</h3>
-      <p>We use the information described above for the following purposes:</p>
-      <ul>
-        <li><strong>Providing Core Functionality:</strong> Rendering your books, tracking reading progress, displaying highlights and notes, and managing your library.</li>
-        <li><strong>Personalization:</strong> Applying your preferred reading settings (font, theme, speed) across your reading experience.</li>
-        <li><strong>Reading Statistics:</strong> Calculating and displaying your reading speed, session history, and completion data locally on your device.</li>
-        <li><strong>Book Discovery:</strong> Fetching book metadata (titles, authors, descriptions, cover images) from public book databases when you search for or add books to your tracking list.</li>
-        <li><strong>Author News:</strong> Displaying relevant news articles about authors in your library.</li>
-        <li><strong>AI-Powered Summaries:</strong> Generating book summaries using Apple's on-device language model (see Section 3).</li>
-        <li><strong>Analytics:</strong> Understanding aggregate usage patterns to improve the App's features and performance. Analytics data is anonymous and not linked to your identity.</li>
-        <li><strong>Subscription Management:</strong> Verifying your subscription status to unlock premium features.</li>
-      </ul>
-
-      <h3>3. AI and Data Processing</h3>
-
-      <h4>3.1 On-Device AI Processing</h4>
-      <p>Fox Reader uses Apple's <strong>Foundation Models framework</strong> to provide AI-powered features, including:</p>
-      <ul>
-        <li><strong>Book Summaries:</strong> Generating concise bullet-point summaries of book content.</li>
-        <li><strong>Genre Classification:</strong> Automatically categorizing books into genres based on their content and metadata.</li>
-      </ul>
-      <p><strong>All AI processing occurs entirely on your device.</strong> Book text is processed by Apple's on-device language model and is never sent to external AI services, cloud-based language models, or any third-party API. No book content leaves your device for AI processing.</p>
-
-      <h4>3.2 Rule-Based Classification</h4>
-      <p>In addition to on-device AI, the App uses rule-based keyword matching and scoring algorithms for genre classification. These algorithms run locally and do not involve any network communication.</p>
-
-      <h4>3.3 No External AI Services</h4>
-      <p>Fox Reader does <strong>not</strong> use OpenAI, Google Gemini, Anthropic Claude, or any other external AI service. There are no API calls to third-party AI providers.</p>
-
-      <h3>4. Third-Party Services</h3>
-      <p>Fox Reader integrates with the following third-party services:</p>
-
-      <h4>4.1 Firebase Analytics (Google)</h4>
-      <ul>
-        <li><strong>Provider:</strong> Google LLC</li>
-        <li><strong>Purpose:</strong> Anonymous usage analytics to understand feature adoption and app performance.</li>
-        <li><strong>Data Sent:</strong> Anonymous event data (e.g., "a book was imported," "a reading session ended") with non-identifying metadata (e.g., file type, word count, session duration). User properties include aggregate counts (total books, subscription status) that are not linked to your identity.</li>
-        <li><strong>Data NOT Sent:</strong> Book titles, book content, personal notes, highlights, or any personally identifiable information.</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a></li>
-      </ul>
-
-      <h4>4.2 Google Books API (Google)</h4>
-      <ul>
-        <li><strong>Provider:</strong> Google LLC</li>
-        <li><strong>Purpose:</strong> Fetching book metadata (title, author, description, page count, cover image) when you search for books or look up ISBNs.</li>
-        <li><strong>Data Sent:</strong> Search queries (book titles, author names) and ISBN numbers you enter.</li>
-        <li><strong>Data NOT Sent:</strong> Your reading progress, notes, highlights, or any personal data.</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a></li>
-      </ul>
-
-      <h4>4.3 Open Library API (Internet Archive)</h4>
-      <ul>
-        <li><strong>Provider:</strong> Internet Archive</li>
-        <li><strong>Purpose:</strong> Supplementing book metadata, retrieving series information, subject classification, and book descriptions.</li>
-        <li><strong>Data Sent:</strong> Book titles, author names, and ISBN numbers for lookup purposes.</li>
-        <li><strong>Data NOT Sent:</strong> Your reading data, personal notes, or any personal information.</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://archive.org/about/terms.php" rel="noopener noreferrer" target="_blank">Internet Archive Privacy Policy</a></li>
-      </ul>
-
-      <h4>4.4 Bing News RSS (Microsoft)</h4>
-      <ul>
-        <li><strong>Provider:</strong> Microsoft Corporation</li>
-        <li><strong>Purpose:</strong> Displaying news articles about authors in your library.</li>
-        <li><strong>Data Sent:</strong> Author names as search queries.</li>
-        <li><strong>Data NOT Sent:</strong> Your reading data, book library contents, or personal information.</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://privacy.microsoft.com/privacystatement" rel="noopener noreferrer" target="_blank">Microsoft Privacy Statement</a></li>
-      </ul>
-
-      <h4>4.5 Apple iCloud (CloudKit)</h4>
-      <ul>
-        <li><strong>Provider:</strong> Apple Inc.</li>
-        <li><strong>Purpose:</strong> Syncing your library data (books, highlights, notes, collections, reading progress, preferences) across your Apple devices.</li>
-        <li><strong>Data Synced:</strong> All SwiftData model data and reader preferences, encrypted and stored in your personal iCloud account.</li>
-        <li><strong>Control:</strong> iCloud sync is governed by your device's iCloud settings. You can disable iCloud sync for Fox Reader in your device's Settings app.</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://www.apple.com/privacy/" rel="noopener noreferrer" target="_blank">Apple Privacy Policy</a></li>
-      </ul>
-
-      <h4>4.6 Apple StoreKit 2</h4>
-      <ul>
-        <li><strong>Provider:</strong> Apple Inc.</li>
-        <li><strong>Purpose:</strong> Processing subscription purchases and verifying entitlements.</li>
-        <li><strong>Data Handled:</strong> Subscription transactions are processed entirely by Apple. Fox Reader only reads the transaction status to determine whether premium features should be unlocked. We do not collect or store payment information.</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://www.apple.com/privacy/" rel="noopener noreferrer" target="_blank">Apple Privacy Policy</a></li>
-      </ul>
-
-      <h4>4.7 EPUBKit (Open Source)</h4>
-      <ul>
-        <li><strong>Provider:</strong> Open-source library by Witek Bobrowski</li>
-        <li><strong>Purpose:</strong> Parsing and rendering EPUB files locally on your device.</li>
-        <li><strong>Data Handling:</strong> This library operates entirely offline and does not transmit any data.</li>
-      </ul>
-
-      <h3>5. Data Sharing and Disclosure</h3>
-
-      <h4>5.1 We Do Not Sell Your Data</h4>
-      <p>We do <strong>not</strong> sell, rent, trade, or otherwise transfer your personal information or reading data to any third party for commercial purposes.</p>
-
-      <h4>5.2 We Do Not Share Your Data for Advertising</h4>
-      <p>We do not share your data with advertisers or advertising networks. The App does not display ads.</p>
-
-      <h4>5.3 Limited Data Transmission</h4>
-      <p>The only data transmitted from your device is:</p>
-      <ul>
-        <li><strong>Anonymous analytics events</strong> to Firebase (not linked to your identity).</li>
-        <li><strong>Book search queries</strong> (titles, authors, ISBNs) to Google Books API, Open Library API, and Bing News RSS when you actively initiate a search or lookup.</li>
-        <li><strong>Library and preference data</strong> to your personal iCloud account if iCloud sync is enabled.</li>
-        <li><strong>Subscription verification</strong> through Apple's StoreKit framework.</li>
-      </ul>
-
-      <h4>5.4 Legal Requirements</h4>
-      <p>We may disclose information if required by law, regulation, legal process, or governmental request. However, because we do not collect personally identifiable information, the data we could provide in response to such requests is extremely limited.</p>
-
-      <h3>6. Data Retention</h3>
-
-      <h4>6.1 On-Device Data</h4>
-      <p>All user-generated data (books, highlights, notes, reading progress, vocabulary words, ratings, and collections) is stored on your device for as long as you use the App. This data is deleted when you uninstall the App or manually delete items within the App.</p>
-
-      <h4>6.2 iCloud Data</h4>
-      <p>Data synced to iCloud is retained in your personal iCloud account according to Apple's data retention policies. You can manage or delete this data through your iCloud settings.</p>
-
-      <h4>6.3 Analytics Data</h4>
-      <p>Firebase Analytics data is retained according to Google's data retention policies. This data is anonymous and cannot be linked back to you or your device. Firebase Analytics data is retained for a maximum of 14 months by default.</p>
-
-      <h4>6.4 Cached Data</h4>
-      <p>The App caches book metadata and news articles locally on your device to improve performance. This cached data is automatically managed and is removed when you uninstall the App.</p>
-
-      <h3>7. User Rights</h3>
-
-      <h4>7.1 Access Your Data</h4>
-      <p>All your data (books, highlights, notes, reading progress, ratings, and preferences) is stored on your device and is directly accessible within the App at any time.</p>
-
-      <h4>7.2 Delete Your Data</h4>
-      <p>You can delete your data in the following ways:</p>
-      <ul>
-        <li><strong>Individual Items:</strong> Delete specific books, highlights, notes, collections, or tracked books directly within the App.</li>
-        <li><strong>Complete Deletion:</strong> Uninstalling the App removes all locally stored data.</li>
-        <li><strong>iCloud Data:</strong> Manage or delete synced data through your device's iCloud settings (Settings &gt; Apple Account &gt; iCloud &gt; Manage Storage).</li>
-      </ul>
-
-      <h4>7.3 Data Portability</h4>
-      <p>Your reading data is stored locally on your device and can be accessed through standard iOS file management. Original book files (EPUB, PDF) remain in the App's document storage and are accessible via the Files app.</p>
-
-      <h4>7.4 Opt Out of Analytics</h4>
-      <p>You can limit analytics collection by enabling "Limit Ad Tracking" or disabling "Share Analytics" in your iOS device settings (Settings &gt; Privacy &amp; Security &gt; Analytics &amp; Improvements).</p>
-
-      <h4>7.5 Contact Us</h4>
-      <p>If you have questions about your data or wish to exercise any privacy rights, please contact us:</p>
-      <p>Email: <a href="mailto:salmanahmad@berkeley.edu">salmanahmad@berkeley.edu</a></p>
-      <p>We will respond to all privacy-related inquiries within 30 days.</p>
-
-      <h3>8. Children's Privacy</h3>
-      <p>Fox Reader is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. Because the App does not require account creation or collect personally identifiable information, there is minimal risk of inadvertent collection of children's data.</p>
-      <p>If you are a parent or guardian and believe your child has provided personal information through the App, please contact us at the email address listed above, and we will take steps to delete such information.</p>
-      <p>Fox Reader complies with the Children's Online Privacy Protection Act (COPPA) and similar international regulations regarding children's privacy.</p>
-
-      <h3>9. Security Measures</h3>
-      <p>We implement the following measures to protect your data:</p>
-      <ul>
-        <li><strong>On-Device Storage:</strong> All user data is stored locally on your device using Apple's SwiftData framework, which benefits from iOS's built-in hardware encryption and app sandboxing.</li>
-        <li><strong>Encrypted Sync:</strong> iCloud data sync uses Apple's end-to-end encryption.</li>
-        <li><strong>HTTPS:</strong> All network communications (Firebase Analytics, Google Books API, Open Library API, Bing News RSS) use HTTPS encryption for data in transit.</li>
-        <li><strong>No Server Infrastructure:</strong> We do not operate backend servers that store your data. There is no centralized database of user information that could be breached.</li>
-        <li><strong>App Sandboxing:</strong> iOS enforces strict app sandboxing, preventing other apps from accessing Fox Reader's data.</li>
-        <li><strong>No User Accounts:</strong> The absence of user accounts, passwords, or login credentials eliminates an entire category of security risk.</li>
-      </ul>
-
-      <h3>10. International Data Transfers</h3>
-      <p>Fox Reader is available globally on the Apple App Store. By using the App:</p>
-      <ul>
-        <li><strong>Analytics Data:</strong> Anonymous analytics data may be processed by Google (Firebase) on servers located in the United States or other countries where Google operates.</li>
-        <li><strong>Book Metadata Requests:</strong> Search queries sent to Google Books API, Open Library API, and Bing News RSS may be processed on servers outside your country of residence.</li>
-        <li><strong>iCloud Data:</strong> iCloud data is stored and processed by Apple according to Apple's data processing practices and applicable data transfer mechanisms.</li>
-      </ul>
-      <p>All data transmitted internationally is protected by HTTPS encryption in transit. Because we do not collect personally identifiable information, the privacy impact of international data transfers is minimal.</p>
-      <p>For users in the European Economic Area (EEA), United Kingdom, or other jurisdictions with data protection laws: the anonymous analytics data processed by Firebase is covered by Google's data processing terms, which include Standard Contractual Clauses for international transfers.</p>
-
-      <h3>11. Changes to This Policy</h3>
-      <p>We may update this Privacy Policy from time to time to reflect changes in our data practices or legal requirements. When we make changes:</p>
-      <ul>
-        <li>The "Last Updated" date at the top of this policy will be revised.</li>
-        <li>For material changes, we will notify you through an in-app notice or through the App Store update notes.</li>
-        <li>Continued use of the App after changes are posted constitutes acceptance of the revised policy.</li>
-      </ul>
-      <p>We encourage you to review this Privacy Policy periodically.</p>
-
-      <h3>12. Contact Information</h3>
-      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
-      <p>
-        <strong>Developer:</strong> Salman Ahmad<br>
-        <strong>Email:</strong> <a href="mailto:salmanahmad@berkeley.edu">salmanahmad@berkeley.edu</a><br>
-        <strong>App:</strong> Fox Reader<br>
-        <strong>Platform:</strong> iOS (App Store)
-      </p>
-      <p>For Apple-specific privacy concerns, you may also contact Apple directly through their <a href="https://www.apple.com/privacy/contact/" rel="noopener noreferrer" target="_blank">Privacy</a> page.</p>
-
-      <p><strong>Summary:</strong> Fox Reader is designed with privacy at its core. Your books, notes, highlights, and reading data stay on your device. We collect only anonymous usage analytics, and all AI features run entirely on-device. We do not sell your data, we do not show ads, and we do not track you across apps or websites.</p>
-    </div>
-
-    <!-- LightningRead Privacy Policy -->
-    <div id="policy-lightningread" class="app-policy" style="display:none;">
-      <button class="policy-back" onclick="showSelector()" aria-label="Back to app list">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
-          <line x1="19" y1="12" x2="5" y2="12"/>
-          <polyline points="12 19 5 12 12 5"/>
-        </svg>
-        All Apps
-      </button>
-
-      <h2 class="policy-app-title">LightningRead — Privacy Policy</h2>
       <p class="policy-date">Effective Date: April 13, 2026 &middot; Last Updated: April 13, 2026</p>
 
-      <p>This Privacy Policy describes how LightningRead ("we," "our," or "the App") collects, uses, and protects your information. LightningRead is developed by Salman Ahmad. By using the App, you agree to the practices described in this policy.</p>
+      <p>This Privacy Policy describes how Fox Reader ("we," "our," or "the App") collects, uses, and protects your information. Fox Reader is developed by Salman Ahmad. By using the App, you agree to the practices described in this policy.</p>
 
       <h3>1. Information We Collect</h3>
       <p>We collect the following categories of information:</p>
 
       <h4>A. Reading Activity and Usage Data</h4>
-      <p>When you use LightningRead, we collect usage data to improve the App experience. This includes:</p>
+      <p>When you use Fox Reader, we collect usage data to improve the App experience. This includes:</p>
       <ul>
         <li><strong>Reading session data:</strong> Session duration, words read, average reading speed (words per minute), and reading progress.</li>
         <li><strong>Library interactions:</strong> Book imports (file type and word count), book opens, book completions, and book ratings.</li>
@@ -403,7 +143,7 @@
       </ul>
 
       <h3>3. Third-Party Services</h3>
-      <p>LightningRead uses the following third-party services:</p>
+      <p>Fox Reader uses the following third-party services:</p>
 
       <h4>A. Firebase Analytics (Google LLC)</h4>
       <p>We use Firebase Analytics to collect anonymous usage data and performance metrics as described in Section 1. Firebase Analytics:</p>
@@ -446,27 +186,27 @@
         <li><strong>Local Storage:</strong> All your personal data (books, annotations, reading progress, preferences) is stored locally on your device using Apple's SwiftData framework.</li>
         <li><strong>iCloud Sync:</strong> If enabled, your data is synced to your personal iCloud account via CloudKit. This data is stored in your private database — we do not have access to it. Apple encrypts iCloud data in transit (TLS) and at rest.</li>
         <li><strong>Analytics Data:</strong> Anonymous usage data is stored on Google's Firebase servers. This data is not linked to your identity and is retained according to Google's data retention policies.</li>
-        <li><strong>No Custom Servers:</strong> LightningRead does not operate any custom backend servers. We do not store any of your data on our own servers.</li>
+        <li><strong>No Custom Servers:</strong> Fox Reader does not operate any custom backend servers. We do not store any of your data on our own servers.</li>
         <li><strong>Security Measures:</strong> The App uses Apple's built-in security frameworks, sandboxed storage, and secure file access (security-scoped resources) to protect your data.</li>
       </ul>
 
       <h3>6. Data Retention and Deletion</h3>
       <ul>
         <li><strong>Local Data:</strong> All data stored on your device is retained until you delete it within the App or uninstall the App. Deleting a book removes all associated reading sessions, highlights, notes, and progress data.</li>
-        <li><strong>iCloud Data:</strong> Data synced to iCloud is retained in your iCloud account until you delete it from the App or remove the App's iCloud data from your device settings (Settings &gt; [Your Name] &gt; iCloud &gt; Manage Storage &gt; LightningRead).</li>
+        <li><strong>iCloud Data:</strong> Data synced to iCloud is retained in your iCloud account until you delete it from the App or remove the App's iCloud data from your device settings (Settings &gt; [Your Name] &gt; iCloud &gt; Manage Storage &gt; Fox Reader).</li>
         <li><strong>Analytics Data:</strong> Firebase Analytics data is retained for 14 months by default, after which it is automatically deleted from Google's servers. Aggregated data without user-level identifiers may be retained longer for trend analysis.</li>
       </ul>
       <p><strong>How to Delete Your Data:</strong></p>
-      <p>Since LightningRead does not require user accounts and does not store personal data on our servers, you have full control over your data:</p>
+      <p>Since Fox Reader does not require user accounts and does not store personal data on our servers, you have full control over your data:</p>
       <ol>
         <li><strong>Delete individual items:</strong> Remove books, highlights, notes, vocabulary words, and collections directly within the App. Deletions cascade — removing a book removes all associated data.</li>
         <li><strong>Delete all local data:</strong> Uninstall the App from your device.</li>
-        <li><strong>Delete iCloud data:</strong> Go to Settings &gt; [Your Name] &gt; iCloud &gt; Manage Storage &gt; LightningRead &gt; Delete Data.</li>
+        <li><strong>Delete iCloud data:</strong> Go to Settings &gt; [Your Name] &gt; iCloud &gt; Manage Storage &gt; Fox Reader &gt; Delete Data.</li>
         <li><strong>Request analytics data deletion:</strong> Contact us at the email below to request deletion of any analytics data associated with your app instance.</li>
       </ol>
 
       <h3>7. Children's Privacy</h3>
-      <p>LightningRead is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at the email address below, and we will take steps to delete such information.</p>
+      <p>Fox Reader is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at the email address below, and we will take steps to delete such information.</p>
 
       <h3>8. Your Privacy Rights</h3>
       <p>Depending on your jurisdiction, you may have the following rights:</p>
@@ -499,7 +239,7 @@
       </ul>
 
       <h3>9. Subscriptions</h3>
-      <p>LightningRead offers auto-renewable subscriptions:</p>
+      <p>Fox Reader offers auto-renewable subscriptions:</p>
       <ul>
         <li><strong>Monthly:</strong> $4.99 per month</li>
         <li><strong>Yearly:</strong> $29.99 per year</li>
@@ -507,7 +247,7 @@
       <p>Subscriptions include a 7-day free trial for eligible users. Payment is charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. You can manage and cancel subscriptions in your Apple ID account settings (Settings &gt; [Your Name] &gt; Subscriptions). No refunds are provided for unused portions of a subscription period. Subscription prices may vary by region and are subject to change.</p>
 
       <h3>10. Cookies and Tracking Technologies</h3>
-      <p>LightningRead does not use cookies, web beacons, pixels, or similar tracking technologies. The App does not access the Apple Advertising Identifier (IDFA) and does not participate in any advertising networks or cross-app tracking.</p>
+      <p>Fox Reader does not use cookies, web beacons, pixels, or similar tracking technologies. The App does not access the Apple Advertising Identifier (IDFA) and does not participate in any advertising networks or cross-app tracking.</p>
 
       <h3>11. Changes to This Privacy Policy</h3>
       <p>We may update this Privacy Policy from time to time. When we make changes, we will update the "Last Updated" date at the top of this policy. We encourage you to review this policy periodically. Continued use of the App after changes constitutes your acceptance of the updated policy. For material changes, we will make reasonable efforts to notify you through the App.</p>
