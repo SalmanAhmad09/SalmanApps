@@ -76,6 +76,17 @@
           </div>
           <span class="app-selector-name">Fox Reader</span>
         </button>
+        <button class="app-selector-item" data-app="lightningread" aria-label="View LightningRead privacy policy">
+          <div class="app-selector-icon">
+            <img src="apps/lightningread/icon.png" alt="LightningRead icon" onerror="this.style.display='none';this.parentElement.querySelector('.icon-fallback').style.display='flex'">
+            <div class="icon-fallback" style="display:none;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="32" height="32">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+          </div>
+          <span class="app-selector-name">LightningRead</span>
+        </button>
       </div>
     </div>
 
@@ -326,6 +337,190 @@
       <p>For Apple-specific privacy concerns, you may also contact Apple directly through their <a href="https://www.apple.com/privacy/contact/" rel="noopener noreferrer" target="_blank">Privacy</a> page.</p>
 
       <p><strong>Summary:</strong> Fox Reader is designed with privacy at its core. Your books, notes, highlights, and reading data stay on your device. We collect only anonymous usage analytics, and all AI features run entirely on-device. We do not sell your data, we do not show ads, and we do not track you across apps or websites.</p>
+    </div>
+
+    <!-- LightningRead Privacy Policy -->
+    <div id="policy-lightningread" class="app-policy" style="display:none;">
+      <button class="policy-back" onclick="showSelector()" aria-label="Back to app list">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+          <line x1="19" y1="12" x2="5" y2="12"/>
+          <polyline points="12 19 5 12 12 5"/>
+        </svg>
+        All Apps
+      </button>
+
+      <h2 class="policy-app-title">LightningRead — Privacy Policy</h2>
+      <p class="policy-date">Effective Date: April 13, 2026 &middot; Last Updated: April 13, 2026</p>
+
+      <p>This Privacy Policy describes how LightningRead ("we," "our," or "the App") collects, uses, and protects your information. LightningRead is developed by Salman Ahmad. By using the App, you agree to the practices described in this policy.</p>
+
+      <h3>1. Information We Collect</h3>
+      <p>We collect the following categories of information:</p>
+
+      <h4>A. Reading Activity and Usage Data</h4>
+      <p>When you use LightningRead, we collect usage data to improve the App experience. This includes:</p>
+      <ul>
+        <li><strong>Reading session data:</strong> Session duration, words read, average reading speed (words per minute), and reading progress.</li>
+        <li><strong>Library interactions:</strong> Book imports (file type and word count), book opens, book completions, and book ratings.</li>
+        <li><strong>Feature usage:</strong> Paywall views and actions, annotation creation events (type only — not content), vocabulary game completions (game type and score), Fox Summary usage (success/failure status only), onboarding completion, and Goodreads import activity (count of imported and skipped items).</li>
+        <li><strong>Performance data:</strong> Book load times (file type and duration).</li>
+        <li><strong>User properties:</strong> Total number of books in your library, number of finished books, file types in your library, preferred reading theme, preferred reading speed, and subscription status.</li>
+      </ul>
+      <p><strong>Important:</strong> We never collect or transmit the text content of your books, the text of your highlights or notes, or any personal identifiers such as your name, email address, or phone number through our analytics.</p>
+
+      <h4>B. Book Metadata</h4>
+      <p>When you import books or use book discovery features, the App processes book metadata including title, author, ISBN, page count, publisher, publication date, cover images, and descriptions. This metadata is stored locally on your device and optionally synced to your personal iCloud account.</p>
+
+      <h4>C. Annotations and Personal Data</h4>
+      <p>All personal reading data — including highlights, notes, vocabulary words, book ratings, reading sessions, collections, and reading progress — is stored locally on your device and, if you have iCloud enabled, synced to your personal iCloud account. We do not have access to this data.</p>
+
+      <h4>D. Device and Technical Information</h4>
+      <p>Through our analytics service (Firebase Analytics, described below), the following device information may be automatically collected:</p>
+      <ul>
+        <li>Device model and manufacturer</li>
+        <li>Operating system name and version</li>
+        <li>App version and build number</li>
+        <li>Device language and timezone</li>
+        <li>App instance identifier (a randomly generated ID unique to your app installation — this is not linked to your identity)</li>
+        <li>IP address (used by Google solely to derive approximate geographic region, then discarded — not stored or shared with us)</li>
+      </ul>
+
+      <h4>E. Camera Data</h4>
+      <p>The App requests camera access solely for scanning book barcodes (ISBN lookup). Camera data is processed locally on your device in real time and is never recorded, stored, or transmitted.</p>
+
+      <h4>F. Purchase Information</h4>
+      <p>Subscription purchases are processed entirely by Apple through StoreKit 2. We do not collect, process, or store your payment information, Apple ID, or transaction receipts. We only store your subscription status locally on your device to determine feature access.</p>
+
+      <h3>2. How We Use Your Information</h3>
+      <p>We use the information collected for the following purposes:</p>
+      <ul>
+        <li><strong>App Functionality:</strong> To provide core reading features, track your reading progress, manage your book library, and personalize your reading experience.</li>
+        <li><strong>Analytics:</strong> To understand how users interact with the App, identify popular features, diagnose performance issues, and improve the overall user experience. Analytics data is aggregated and not linked to your identity.</li>
+        <li><strong>Book Discovery:</strong> To search for book metadata and cover images when you add books or browse recommendations.</li>
+        <li><strong>Author News:</strong> To fetch relevant news articles about authors in your library.</li>
+        <li><strong>On-Device AI Summarization:</strong> To generate book summaries using Apple Intelligence (Apple's on-device machine learning). All AI processing occurs entirely on your device — no book content is sent to any external server or third-party AI service for this feature.</li>
+        <li><strong>Notifications:</strong> To send local reading reminders and streak notifications that you have opted into. These are scheduled entirely on your device.</li>
+      </ul>
+
+      <h3>3. Third-Party Services</h3>
+      <p>LightningRead uses the following third-party services:</p>
+
+      <h4>A. Firebase Analytics (Google LLC)</h4>
+      <p>We use Firebase Analytics to collect anonymous usage data and performance metrics as described in Section 1. Firebase Analytics:</p>
+      <ul>
+        <li>Assigns a randomly generated app instance identifier (not linked to your identity or Apple ID)</li>
+        <li>Does not collect the Apple Advertising Identifier (IDFA)</li>
+        <li>Does not use data for advertising or cross-app tracking</li>
+        <li>Processes data on Google's servers under Google's privacy terms</li>
+      </ul>
+      <p>For more information, see Google's Privacy Policy at <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a> and Firebase's data collection documentation at <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">https://firebase.google.com/support/privacy</a>.</p>
+      <p>We confirm that Google, as a third-party data processor, provides data protections consistent with this Privacy Policy.</p>
+
+      <h4>B. Google Books API (Google LLC)</h4>
+      <p>When you search for books or the App looks up metadata by ISBN, requests are sent to the Google Books API. These requests include search queries or ISBN numbers — no personal data is included. See Google's Privacy Policy at <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a>.</p>
+
+      <h4>C. Open Library API (Internet Archive)</h4>
+      <p>The App queries the Open Library API for book metadata and recommendations. These requests include search terms, ISBN numbers, or author names — no personal data is included. See the Internet Archive's Privacy Policy at <a href="https://archive.org/about/terms.php" rel="noopener noreferrer" target="_blank">https://archive.org/about/terms.php</a>.</p>
+
+      <h4>D. Bing News (Microsoft Corporation)</h4>
+      <p>The App fetches news articles about authors in your library via Bing News RSS feeds. These requests include author names only — no personal data is included. See Microsoft's Privacy Statement at <a href="https://privacy.microsoft.com/privacystatement" rel="noopener noreferrer" target="_blank">https://privacy.microsoft.com/privacystatement</a>.</p>
+
+      <h4>E. Apple Services</h4>
+      <ul>
+        <li><strong>iCloud/CloudKit:</strong> If you have iCloud enabled on your device, the App syncs your library data (books, reading progress, annotations, collections, vocabulary, preferences) to your personal iCloud account using Apple's CloudKit framework. This data is stored in your private iCloud database — we cannot access it. Apple encrypts this data in transit and at rest. You can disable iCloud sync in your device's Settings. See Apple's Privacy Policy at <a href="https://www.apple.com/legal/privacy" rel="noopener noreferrer" target="_blank">https://www.apple.com/legal/privacy</a>.</li>
+        <li><strong>StoreKit 2:</strong> All subscription transactions are processed by Apple. We do not receive or store payment details.</li>
+        <li><strong>Apple Intelligence (FoundationModels):</strong> The Fox Summary feature uses Apple's on-device language model. All processing occurs locally on your device. No text content is sent to Apple or any third party for this feature.</li>
+      </ul>
+
+      <h4>F. EPUBKit (Open-Source Library)</h4>
+      <p>EPUBKit is used to parse EPUB files locally on your device. It does not collect, transmit, or share any data.</p>
+
+      <h3>4. Data Sharing</h3>
+      <p>We do <strong>not</strong> sell, rent, or trade your personal data to any third party.</p>
+      <p>We do <strong>not</strong> share your data with third parties for advertising or marketing purposes.</p>
+      <p>We do <strong>not</strong> use your data for cross-app tracking.</p>
+      <p>The only data shared with third parties is anonymous, aggregated usage data sent to Firebase Analytics as described in Section 3(A). No personal identifiers are included in this data.</p>
+
+      <h3>5. Data Storage and Security</h3>
+      <ul>
+        <li><strong>Local Storage:</strong> All your personal data (books, annotations, reading progress, preferences) is stored locally on your device using Apple's SwiftData framework.</li>
+        <li><strong>iCloud Sync:</strong> If enabled, your data is synced to your personal iCloud account via CloudKit. This data is stored in your private database — we do not have access to it. Apple encrypts iCloud data in transit (TLS) and at rest.</li>
+        <li><strong>Analytics Data:</strong> Anonymous usage data is stored on Google's Firebase servers. This data is not linked to your identity and is retained according to Google's data retention policies.</li>
+        <li><strong>No Custom Servers:</strong> LightningRead does not operate any custom backend servers. We do not store any of your data on our own servers.</li>
+        <li><strong>Security Measures:</strong> The App uses Apple's built-in security frameworks, sandboxed storage, and secure file access (security-scoped resources) to protect your data.</li>
+      </ul>
+
+      <h3>6. Data Retention and Deletion</h3>
+      <ul>
+        <li><strong>Local Data:</strong> All data stored on your device is retained until you delete it within the App or uninstall the App. Deleting a book removes all associated reading sessions, highlights, notes, and progress data.</li>
+        <li><strong>iCloud Data:</strong> Data synced to iCloud is retained in your iCloud account until you delete it from the App or remove the App's iCloud data from your device settings (Settings &gt; [Your Name] &gt; iCloud &gt; Manage Storage &gt; LightningRead).</li>
+        <li><strong>Analytics Data:</strong> Firebase Analytics data is retained for 14 months by default, after which it is automatically deleted from Google's servers. Aggregated data without user-level identifiers may be retained longer for trend analysis.</li>
+      </ul>
+      <p><strong>How to Delete Your Data:</strong></p>
+      <p>Since LightningRead does not require user accounts and does not store personal data on our servers, you have full control over your data:</p>
+      <ol>
+        <li><strong>Delete individual items:</strong> Remove books, highlights, notes, vocabulary words, and collections directly within the App. Deletions cascade — removing a book removes all associated data.</li>
+        <li><strong>Delete all local data:</strong> Uninstall the App from your device.</li>
+        <li><strong>Delete iCloud data:</strong> Go to Settings &gt; [Your Name] &gt; iCloud &gt; Manage Storage &gt; LightningRead &gt; Delete Data.</li>
+        <li><strong>Request analytics data deletion:</strong> Contact us at the email below to request deletion of any analytics data associated with your app instance.</li>
+      </ol>
+
+      <h3>7. Children's Privacy</h3>
+      <p>LightningRead is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at the email address below, and we will take steps to delete such information.</p>
+
+      <h3>8. Your Privacy Rights</h3>
+      <p>Depending on your jurisdiction, you may have the following rights:</p>
+      <p><strong>For All Users:</strong></p>
+      <ul>
+        <li><strong>Access:</strong> You can view all your data directly within the App at any time.</li>
+        <li><strong>Deletion:</strong> You can delete your data as described in Section 6.</li>
+        <li><strong>Opt-Out of Analytics:</strong> You can limit analytics data collection by enabling "Limit Ad Tracking" or disabling analytics sharing in your device's Settings &gt; Privacy &amp; Security &gt; Analytics &amp; Improvements.</li>
+      </ul>
+      <p><strong>For European Economic Area (EEA) Residents (GDPR):</strong></p>
+      <ul>
+        <li><strong>Lawful Basis:</strong> We process usage data based on our legitimate interest in improving the App. iCloud sync is based on your consent (by enabling iCloud on your device).</li>
+        <li><strong>Right to Access:</strong> You may request a copy of any data we hold about you.</li>
+        <li><strong>Right to Rectification:</strong> You may correct inaccurate data within the App.</li>
+        <li><strong>Right to Erasure:</strong> You may request deletion of your data.</li>
+        <li><strong>Right to Restrict Processing:</strong> You may request that we limit processing of your data.</li>
+        <li><strong>Right to Data Portability:</strong> Your data is stored locally on your device and in your iCloud account, giving you full portability.</li>
+        <li><strong>Right to Object:</strong> You may object to processing based on legitimate interests.</li>
+        <li><strong>Right to Withdraw Consent:</strong> You may withdraw consent at any time by disabling iCloud sync in device Settings.</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at the email address provided in Section 12.</p>
+      <p><strong>For California Residents (CCPA/CPRA):</strong></p>
+      <ul>
+        <li><strong>Right to Know:</strong> You have the right to know what personal information we collect and how it is used. This is described in this Privacy Policy.</li>
+        <li><strong>Right to Delete:</strong> You have the right to request deletion of your personal information, as described in Section 6.</li>
+        <li><strong>Right to Opt-Out of Sale:</strong> We do not sell your personal information. No opt-out is necessary.</li>
+        <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights.</li>
+        <li><strong>Categories of Personal Information Collected:</strong> Device information (identifiers, device attributes) and usage data (interactions with the App). See Section 1 for details.</li>
+        <li><strong>Categories Sold or Shared:</strong> None.</li>
+      </ul>
+
+      <h3>9. Subscriptions</h3>
+      <p>LightningRead offers auto-renewable subscriptions:</p>
+      <ul>
+        <li><strong>Monthly:</strong> $4.99 per month</li>
+        <li><strong>Yearly:</strong> $29.99 per year</li>
+      </ul>
+      <p>Subscriptions include a 7-day free trial for eligible users. Payment is charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. You can manage and cancel subscriptions in your Apple ID account settings (Settings &gt; [Your Name] &gt; Subscriptions). No refunds are provided for unused portions of a subscription period. Subscription prices may vary by region and are subject to change.</p>
+
+      <h3>10. Cookies and Tracking Technologies</h3>
+      <p>LightningRead does not use cookies, web beacons, pixels, or similar tracking technologies. The App does not access the Apple Advertising Identifier (IDFA) and does not participate in any advertising networks or cross-app tracking.</p>
+
+      <h3>11. Changes to This Privacy Policy</h3>
+      <p>We may update this Privacy Policy from time to time. When we make changes, we will update the "Last Updated" date at the top of this policy. We encourage you to review this policy periodically. Continued use of the App after changes constitutes your acceptance of the updated policy. For material changes, we will make reasonable efforts to notify you through the App.</p>
+
+      <h3>12. Contact Us</h3>
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us at:</p>
+      <p>
+        <strong>Developer:</strong> Salman Ahmad<br>
+        <strong>Email:</strong> <a href="mailto:salmanahmad@berkeley.edu">salmanahmad@berkeley.edu</a>
+      </p>
+
+      <h3>13. Governing Law</h3>
+      <p>This Privacy Policy is governed by the laws of the United States and the state in which the developer resides, without regard to conflict of law provisions.</p>
     </div>
   </main>
 
