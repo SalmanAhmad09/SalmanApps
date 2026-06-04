@@ -90,7 +90,7 @@
       </button>
 
       <h2 class="policy-app-title">Fox Reader — Privacy Policy</h2>
-      <p class="policy-date">Effective Date: April 13, 2026 &middot; Last Updated: April 13, 2026</p>
+      <p class="policy-date">Effective Date: April 13, 2026 &middot; Last Updated: June 5, 2026</p>
 
       <p>This Privacy Policy describes how Fox Reader ("we," "our," or "the App") collects, uses, and protects your information. Fox Reader is developed by Salman Ahmad. By using the App, you agree to the practices described in this policy.</p>
 
@@ -131,6 +131,15 @@
       <h4>F. Purchase Information</h4>
       <p>Subscription purchases are processed entirely by Apple through StoreKit 2. We do not collect, process, or store your payment information, Apple ID, or transaction receipts. We only store your subscription status locally on your device to determine feature access.</p>
 
+      <h4>G. Advertising Data (Free Users Only)</h4>
+      <p>Fox Reader is free to use and is supported by advertising. We display occasional in-app native ads, provided by Google AdMob, to users on the free tier. <strong>Active subscribers never see ads.</strong> In connection with advertising, the following may be collected by our advertising partner (Google):</p>
+      <ul>
+        <li><strong>Advertising Identifier (IDFA):</strong> With your permission &mdash; granted through Apple's App Tracking Transparency (ATT) prompt &mdash; your device's Advertising Identifier may be used to deliver and measure personalized ads. If you do not grant permission, you will still see ads, but they will be <strong>non-personalized</strong> (not based on your IDFA or cross-app activity).</li>
+        <li><strong>Ad interaction and device data:</strong> Information such as ad views, taps, general device characteristics, and coarse location derived from your IP address may be processed by Google to serve and measure ads.</li>
+        <li><strong>SKAdNetwork:</strong> The App uses Apple's SKAdNetwork framework for privacy-preserving measurement of ad campaign performance (for example, app installs attributed to an ad). SKAdNetwork reporting is aggregated by Apple and does not use the IDFA or identify you individually.</li>
+      </ul>
+      <p>The App does not access your Advertising Identifier directly &mdash; this is handled by the Google Mobile Ads SDK in accordance with your ATT and consent choices.</p>
+
       <h3>2. How We Use Your Information</h3>
       <p>We use the information collected for the following purposes:</p>
       <ul>
@@ -140,6 +149,7 @@
         <li><strong>Author News:</strong> To fetch relevant news articles about authors in your library.</li>
         <li><strong>On-Device AI Summarization:</strong> To generate book summaries using Apple Intelligence (Apple's on-device machine learning). All AI processing occurs entirely on your device — no book content is sent to any external server or third-party AI service for this feature.</li>
         <li><strong>Notifications:</strong> To send local reading reminders and streak notifications that you have opted into. These are scheduled entirely on your device.</li>
+        <li><strong>Advertising:</strong> To display and measure ads for users on the free tier through Google AdMob, and to give you the option of removing ads by subscribing.</li>
       </ul>
 
       <h3>3. Third-Party Services</h3>
@@ -149,8 +159,8 @@
       <p>We use Firebase Analytics to collect anonymous usage data and performance metrics as described in Section 1. Firebase Analytics:</p>
       <ul>
         <li>Assigns a randomly generated app instance identifier (not linked to your identity or Apple ID)</li>
-        <li>Does not collect the Apple Advertising Identifier (IDFA)</li>
-        <li>Does not use data for advertising or cross-app tracking</li>
+        <li>Is configured <strong>not</strong> to collect the Apple Advertising Identifier (IDFA) for analytics</li>
+        <li>Does not use your analytics data for advertising or cross-app tracking (advertising is handled separately by Google AdMob, described in Section 3(F))</li>
         <li>Processes data on Google's servers under Google's privacy terms</li>
       </ul>
       <p>For more information, see Google's Privacy Policy at <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a> and Firebase's data collection documentation at <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">https://firebase.google.com/support/privacy</a>.</p>
@@ -172,14 +182,26 @@
         <li><strong>Apple Intelligence (FoundationModels):</strong> The Fox Summary feature uses Apple's on-device language model. All processing occurs locally on your device. No text content is sent to Apple or any third party for this feature.</li>
       </ul>
 
-      <h4>F. EPUBKit (Open-Source Library)</h4>
+      <h4>F. Google AdMob (Google LLC)</h4>
+      <p>For users on the free tier, Fox Reader displays native ads served by Google AdMob (part of the Google Mobile Ads SDK). <strong>Subscribers do not see ads.</strong> Through AdMob, Google may collect and process data to serve and measure ads, including:</p>
+      <ul>
+        <li>The Apple Advertising Identifier (IDFA) &mdash; only if you grant permission via Apple's App Tracking Transparency prompt</li>
+        <li>Ad-interaction data (impressions, clicks), general device information, and approximate location derived from your IP address</li>
+      </ul>
+      <p>If you grant tracking permission, ads may be <strong>personalized</strong> and used for cross-app measurement. If you decline, ads are <strong>non-personalized</strong>. We use Google's User Messaging Platform (UMP) to obtain consent where required (for example, in the EEA, UK, and Switzerland), and the App requests ATT permission as required by Apple. You can change your choices at any time via the <strong>"Manage Privacy Options"</strong> control in the App's Settings, and through your device's Settings (Privacy &amp; Security &gt; Tracking).</p>
+      <p>For more information on how Google uses data when you use apps that use its services, see <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a> and <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer" target="_blank">https://policies.google.com/technologies/partner-sites</a>.</p>
+
+      <h4>G. EPUBKit (Open-Source Library)</h4>
       <p>EPUBKit is used to parse EPUB files locally on your device. It does not collect, transmit, or share any data.</p>
 
       <h3>4. Data Sharing</h3>
-      <p>We do <strong>not</strong> sell, rent, or trade your personal data to any third party.</p>
-      <p>We do <strong>not</strong> share your data with third parties for advertising or marketing purposes.</p>
-      <p>We do <strong>not</strong> use your data for cross-app tracking.</p>
-      <p>The only data shared with third parties is anonymous, aggregated usage data sent to Firebase Analytics as described in Section 3(A). No personal identifiers are included in this data.</p>
+      <p>We do <strong>not</strong> sell, rent, or trade your personal data for money.</p>
+      <p>We share data with third parties only as described below:</p>
+      <ul>
+        <li><strong>Analytics:</strong> Anonymous, aggregated usage data is sent to Firebase Analytics as described in Section 3(A). No personal identifiers are included.</li>
+        <li><strong>Advertising (free users only):</strong> To serve ads, limited advertising data is shared with Google AdMob as described in Sections 1(G) and 3(F). If you grant App Tracking Transparency permission, this may include your Advertising Identifier (IDFA) and may be used for personalized ads and cross-app measurement. If you decline, ads are non-personalized. Subscribers do not see ads, and no advertising data is shared for them.</li>
+      </ul>
+      <p>You can opt out of personalized ads and cross-app tracking at any time using Apple's tracking controls and the App's "Manage Privacy Options" (see Section 8).</p>
 
       <h3>5. Data Storage and Security</h3>
       <ul>
@@ -215,27 +237,28 @@
         <li><strong>Access:</strong> You can view all your data directly within the App at any time.</li>
         <li><strong>Deletion:</strong> You can delete your data as described in Section 6.</li>
         <li><strong>Opt-Out of Analytics:</strong> You can limit analytics data collection by enabling "Limit Ad Tracking" or disabling analytics sharing in your device's Settings &gt; Privacy &amp; Security &gt; Analytics &amp; Improvements.</li>
+        <li><strong>Opt-Out of Personalized Ads:</strong> You can decline ad tracking through Apple's App Tracking Transparency prompt, change it later in Settings &gt; Privacy &amp; Security &gt; Tracking, and re-open your advertising consent choices at any time using the "Manage Privacy Options" control in the App's Settings. Declining does not remove ads but makes them non-personalized; subscribing removes ads entirely.</li>
       </ul>
       <p><strong>For European Economic Area (EEA) Residents (GDPR):</strong></p>
       <ul>
-        <li><strong>Lawful Basis:</strong> We process usage data based on our legitimate interest in improving the App. iCloud sync is based on your consent (by enabling iCloud on your device).</li>
+        <li><strong>Lawful Basis:</strong> We process usage data based on our legitimate interest in improving the App. iCloud sync is based on your consent (by enabling iCloud on your device). Personalized advertising and any use of your Advertising Identifier are based on your consent, collected via Google's User Messaging Platform and Apple's App Tracking Transparency prompt.</li>
         <li><strong>Right to Access:</strong> You may request a copy of any data we hold about you.</li>
         <li><strong>Right to Rectification:</strong> You may correct inaccurate data within the App.</li>
         <li><strong>Right to Erasure:</strong> You may request deletion of your data.</li>
         <li><strong>Right to Restrict Processing:</strong> You may request that we limit processing of your data.</li>
         <li><strong>Right to Data Portability:</strong> Your data is stored locally on your device and in your iCloud account, giving you full portability.</li>
         <li><strong>Right to Object:</strong> You may object to processing based on legitimate interests.</li>
-        <li><strong>Right to Withdraw Consent:</strong> You may withdraw consent at any time by disabling iCloud sync in device Settings.</li>
+        <li><strong>Right to Withdraw Consent:</strong> You may withdraw consent at any time by disabling iCloud sync in device Settings, by declining or revoking tracking in Settings &gt; Privacy &amp; Security &gt; Tracking, or by re-opening your advertising consent choices via "Manage Privacy Options" in the App.</li>
       </ul>
       <p>To exercise any of these rights, contact us at the email address provided in Section 12.</p>
       <p><strong>For California Residents (CCPA/CPRA):</strong></p>
       <ul>
         <li><strong>Right to Know:</strong> You have the right to know what personal information we collect and how it is used. This is described in this Privacy Policy.</li>
         <li><strong>Right to Delete:</strong> You have the right to request deletion of your personal information, as described in Section 6.</li>
-        <li><strong>Right to Opt-Out of Sale:</strong> We do not sell your personal information. No opt-out is necessary.</li>
+        <li><strong>Right to Opt-Out of Sale/Sharing:</strong> We do not sell your personal information for money. However, for free-tier users, our use of Google AdMob for personalized advertising may be considered "sharing" for cross-context behavioral advertising under the CPRA. You can opt out at any time by declining tracking in Settings &gt; Privacy &amp; Security &gt; Tracking, by using "Manage Privacy Options" in the App, or by subscribing (which removes ads).</li>
         <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights.</li>
-        <li><strong>Categories of Personal Information Collected:</strong> Device information (identifiers, device attributes) and usage data (interactions with the App). See Section 1 for details.</li>
-        <li><strong>Categories Sold or Shared:</strong> None.</li>
+        <li><strong>Categories of Personal Information Collected:</strong> Device information (identifiers, including the Advertising Identifier where permitted, and device attributes), approximate location (derived from IP address), and usage data (interactions with the App). See Section 1 for details.</li>
+        <li><strong>Categories Shared for Cross-Context Behavioral Advertising:</strong> For free-tier users who grant tracking permission, device identifiers and ad-interaction data may be shared with Google AdMob. None for subscribers or users who decline tracking.</li>
       </ul>
 
       <h3>9. Subscriptions</h3>
@@ -246,8 +269,8 @@
       </ul>
       <p>Subscriptions include a 7-day free trial for eligible users. Payment is charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. You can manage and cancel subscriptions in your Apple ID account settings (Settings &gt; [Your Name] &gt; Subscriptions). No refunds are provided for unused portions of a subscription period. Subscription prices may vary by region and are subject to change.</p>
 
-      <h3>10. Cookies and Tracking Technologies</h3>
-      <p>Fox Reader does not use cookies, web beacons, pixels, or similar tracking technologies. The App does not access the Apple Advertising Identifier (IDFA) and does not participate in any advertising networks or cross-app tracking.</p>
+      <h3>10. Advertising and Tracking Technologies</h3>
+      <p>Fox Reader does not use website cookies or web beacons. For users on the free tier, the App participates in the Google AdMob advertising network to display native ads (see Sections 1(G) and 3(F)). With your permission via Apple's App Tracking Transparency prompt, the App may access the Apple Advertising Identifier (IDFA) for personalized advertising and cross-app measurement; if you decline, ads are non-personalized. The App also uses Apple's SKAdNetwork for privacy-preserving ad attribution, which does not use the IDFA. You can manage these choices through Apple's tracking settings and the App's "Manage Privacy Options" control. Subscribers do not see ads and are not subject to advertising-related tracking.</p>
 
       <h3>11. Changes to This Privacy Policy</h3>
       <p>We may update this Privacy Policy from time to time. When we make changes, we will update the "Last Updated" date at the top of this policy. We encourage you to review this policy periodically. Continued use of the App after changes constitutes your acceptance of the updated policy. For material changes, we will make reasonable efforts to notify you through the App.</p>
