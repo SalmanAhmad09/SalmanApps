@@ -19,7 +19,9 @@ Personal website for Salman Ahmad's iOS applications. Includes app listings, pri
 ├── styles.css          # Global styles (dark/light theme)
 ├── theme.js            # Theme toggle and mobile nav
 └── apps/
-    └── fox-reader/     # Fox Reader app assets
+    ├── fox-reader/     # Fox Reader app assets
+    │   └── icon.png    # App icon
+    └── qvault/         # QVault app assets
         └── icon.png    # App icon
 ```
 
@@ -27,7 +29,7 @@ Personal website for Salman Ahmad's iOS applications. Includes app listings, pri
 
 - Dark/light theme with OS preference detection and localStorage persistence
 - Responsive design with mobile hamburger nav
-- Per-app privacy policy selector on the privacy page
+- Per-app privacy policy selector on the privacy page; `privacy.html#qvault` or `privacy.html#fox-reader` opens one app's policy directly
 
 ## Development
 

@@ -76,6 +76,18 @@
           </div>
           <span class="app-selector-name">Fox Reader</span>
         </button>
+        <button class="app-selector-item" data-app="qvault" aria-label="View QVault privacy policy">
+          <div class="app-selector-icon">
+            <img src="apps/qvault/icon.png" alt="QVault icon" onerror="this.style.display='none';this.parentElement.querySelector('.icon-fallback').style.display='flex'">
+            <div class="icon-fallback" style="display:none;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="32" height="32">
+                <rect x="3" y="11" width="18" height="11" rx="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+          </div>
+          <span class="app-selector-name">QVault</span>
+        </button>
       </div>
     </div>
 
@@ -285,6 +297,84 @@
       <h3>13. Governing Law</h3>
       <p>This Privacy Policy is governed by the laws of the United States and the state in which the developer resides, without regard to conflict of law provisions.</p>
     </div>
+
+    <!-- QVault Privacy Policy -->
+    <div id="policy-qvault" class="app-policy" style="display:none;">
+      <button class="policy-back" onclick="showSelector()" aria-label="Back to app list">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+          <line x1="19" y1="12" x2="5" y2="12"/>
+          <polyline points="12 19 5 12 12 5"/>
+        </svg>
+        All Apps
+      </button>
+
+      <h2 class="policy-app-title">QVault — Privacy Policy</h2>
+      <p class="policy-date">Effective Date: November 19, 2026 &middot; Last Updated: November 19, 2026</p>
+
+      <p>This Privacy Policy describes how QVault ("the App") handles your information. QVault is developed by Salman Ahmad ("we," "our"). The short version: <strong>QVault does not collect any data.</strong> It has no accounts, no analytics, no advertising and no server. Everything you put in it stays on your device.</p>
+
+      <h3>1. Information We Collect</h3>
+      <p>None. We do not collect, receive, store, sell or share any personal information or any of your content. The App contains no analytics, no advertising and no third-party code, it does not ask you to create an account, and we do not operate any server that the App connects to.</p>
+
+      <h3>2. What Stays on Your Device</h3>
+      <ul>
+        <li><strong>Your vault:</strong> The photos, videos, documents and notes you add are encrypted on your device (AES-256) and stored only on your device. Their names, folders and thumbnails are encrypted too. We cannot see, copy, recover or reset them.</li>
+        <li><strong>Your passcode:</strong> Your passcode never leaves your device and is not known to us. There is no reset and no backdoor. <strong>If you forget your passcode, the contents of your vault cannot be recovered by anyone, including us.</strong></li>
+        <li><strong>Break-in records:</strong> If you turn on Break-in Alerts, the App records failed attempts to open it and, if you allow camera access, a photo taken with the front camera. These records are stored encrypted on your device and are never transmitted.</li>
+        <li><strong>Cover apps:</strong> If you choose to have the App open as a notebook, any notes typed into that cover (not into the vault) are stored on your device without vault encryption, because the cover is meant to behave like an ordinary notes app. They are not transmitted. The calculator, weather and unit converter covers work entirely on your device; the weather shown is generated on the device and is not fetched from the internet.</li>
+        <li><strong>Settings:</strong> Your preferences (such as theme, auto-lock time and chosen icon) are stored on your device.</li>
+      </ul>
+
+      <h3>3. Permissions</h3>
+      <p>The App asks for access only when you use a feature that needs it. Nothing obtained through these permissions leaves your device.</p>
+      <ul>
+        <li><strong>Camera:</strong> To take photos and videos straight into your vault, to scan documents and, only if you turn on Break-in Alerts, to photograph a failed unlock attempt.</li>
+        <li><strong>Microphone:</strong> To record sound when you capture a video inside your vault.</li>
+        <li><strong>Photos:</strong> Items are chosen with the system photo picker, which does not give the App access to your library. Access to Photos is requested only if you ask the App to remove the originals you have just moved into your vault, or to save exported items back to Photos.</li>
+      </ul>
+
+      <h3>4. Purchases</h3>
+      <p>QVault Pro is purchased through Apple's In-App Purchase system (StoreKit). Purchases are processed entirely by Apple. We do not receive or store your payment details or your Apple Account. The App asks Apple whether QVault Pro is currently owned and keeps that answer on your device to decide which features are available. Apple's handling of your information is described in Apple's Privacy Policy at <a href="https://www.apple.com/legal/privacy" rel="noopener noreferrer" target="_blank">https://www.apple.com/legal/privacy</a>.</p>
+      <p>Like every developer, we can see aggregated, non-identifying statistics that Apple provides through App Store Connect, such as the number of downloads and sales, and crash reports from users who have chosen in their device settings to share analytics with app developers. This information comes from Apple, not from the App, and does not identify you.</p>
+
+      <h3>5. Network Use</h3>
+      <p>The App does not send your content or any information about you anywhere. The only network communication is with Apple and is carried out by iOS: checking and completing purchases, and Apple's own "rate this app" prompt. Links in the App (such as this policy) open in your browser.</p>
+
+      <h3>6. Backups and Moving to a New Device</h3>
+      <p>If you back up your device (to iCloud or to a computer), Apple's backup may include the App's encrypted vault files. They remain encrypted, and a vault restored from a backup onto a different device cannot be opened there, because part of its key exists only on the original device. To move to a new device, export your files from the App on the old device and import them into the App on the new one.</p>
+
+      <h3>7. Data Retention and Deletion</h3>
+      <p>Because we hold none of your data, there is nothing for us to retain or delete. You are in full control:</p>
+      <ul>
+        <li><strong>Delete items:</strong> Remove items within the App at any time. Deleted items stay in Recently Deleted until you empty it or they expire.</li>
+        <li><strong>Erase a vault:</strong> Use "Erase everything" in the App.</li>
+        <li><strong>Delete everything:</strong> Uninstalling the App removes all of its data from your device.</li>
+      </ul>
+
+      <h3>8. Children's Privacy</h3>
+      <p>QVault is not directed at children under the age of 13, and it does not collect personal information from anyone.</p>
+
+      <h3>9. Your Privacy Rights</h3>
+      <p>Privacy laws such as the GDPR (European Economic Area and United Kingdom) and the CCPA/CPRA (California) give you rights to access, correct, delete and restrict the use of personal information that a business holds about you, and to opt out of its sale or sharing. We hold no personal information about users of QVault, and we do not sell or share any. If you have a question about this, contact us at the address below.</p>
+
+      <h3>10. QVault Pro: Subscription and Lifetime Purchase</h3>
+      <p>QVault is free to use for up to 30 items. QVault Pro removes that limit and adds the decoy vault, break-in photos and disguises. It is offered in two ways:</p>
+      <ul>
+        <li><strong>Monthly:</strong> $4.99 per month, an auto-renewable subscription with a 7-day free trial for eligible users</li>
+        <li><strong>Lifetime:</strong> $19.99, a one-time purchase with no renewal</li>
+      </ul>
+      <p>Payment is charged to your Apple Account at confirmation of purchase or, for the monthly plan, at the end of the free trial. The monthly subscription renews automatically unless it is cancelled at least 24 hours before the end of the current period. You can manage and cancel it in your Apple Account settings (Settings &gt; [Your Name] &gt; Subscriptions). Refunds are handled by Apple. Prices may vary by region and are subject to change. Whether or not you have QVault Pro, everything already in your vault stays viewable and can be exported.</p>
+
+      <h3>11. Changes to This Privacy Policy</h3>
+      <p>We may update this Privacy Policy from time to time. When we make changes, we will update the "Last Updated" date at the top of this policy. If the App ever begins to collect any data, this policy will be updated before that version is released.</p>
+
+      <h3>12. Contact Us</h3>
+      <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+      <p>
+        <strong>Developer:</strong> Salman Ahmad<br>
+        <strong>Email:</strong> <a href="mailto:salmanahmad@berkeley.edu">salmanahmad@berkeley.edu</a>
+      </p>
+    </div>
   </main>
 
   <footer class="footer">
@@ -307,20 +397,38 @@
         policies[i].style.display = 'none';
       }
       document.querySelector('.legal .updated').textContent = 'Select an app to view its privacy policy.';
+      if (location.hash) history.replaceState(null, '', location.pathname + location.search);
     }
 
     function showPolicy(appId) {
+      var policies = document.querySelectorAll('.app-policy');
+      for (var i = 0; i < policies.length; i++) {
+        policies[i].style.display = 'none';
+      }
       document.getElementById('app-selector').style.display = 'none';
       document.getElementById('policy-' + appId).style.display = '';
       document.querySelector('.legal .updated').textContent = '';
     }
 
+    // privacy.html#qvault (or #fox-reader) opens that app's policy directly, so each app can link to its own.
+    function route() {
+      var appId = location.hash.replace('#', '');
+      if (appId && document.getElementById('policy-' + appId)) {
+        showPolicy(appId);
+        window.scrollTo(0, 0);
+      } else {
+        showSelector();
+      }
+    }
+
     var items = document.querySelectorAll('.app-selector-item');
     for (var i = 0; i < items.length; i++) {
       items[i].addEventListener('click', function() {
-        showPolicy(this.getAttribute('data-app'));
+        location.hash = this.getAttribute('data-app');
       });
     }
+    window.addEventListener('hashchange', route);
+    route();
   </script>
 
 </body>
