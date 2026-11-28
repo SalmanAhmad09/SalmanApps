@@ -23,7 +23,9 @@ Personal website for Salman Ahmad's iOS applications. Includes app listings, pri
     │   └── icon.png    # App icon
     ├── quantum/         # Secret Photo Vault: Quantum app assets
     │   └── icon.png    # App icon
-    └── after-a-death/   # After a Death: What to Do Next app assets
+    ├── after-a-death/   # After a Death: What to Do Next app assets
+    │   └── icon.png    # App icon
+    └── doing-list/      # Doing List app assets
         └── icon.png    # App icon
 ```
 
@@ -31,7 +33,7 @@ Personal website for Salman Ahmad's iOS applications. Includes app listings, pri
 
 - Dark/light theme with OS preference detection and localStorage persistence
 - Responsive design with mobile hamburger nav
-- Per-app privacy policy selector on the privacy page; `privacy.html#quantum`, `privacy.html#fox-reader` or `privacy.html#after-a-death` opens one app's policy directly; `terms.html#after-a-death` and `support.html#after-a-death` jump to that app's section
+- Per-app privacy policy selector on the privacy page; `privacy.html#quantum`, `privacy.html#fox-reader`, `privacy.html#after-a-death` or `privacy.html#doing-list` opens one app's policy directly; `terms.html#after-a-death`, `terms.html#doing-list`, `support.html#after-a-death` and `support.html#doing-list` jump to that app's section
 
 ## Development
 

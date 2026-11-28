@@ -101,6 +101,18 @@
           </div>
           <span class="app-selector-name">After a Death</span>
         </button>
+        <button class="app-selector-item" data-app="doing-list" aria-label="View Doing List privacy policy">
+          <div class="app-selector-icon">
+            <img src="apps/doing-list/icon.png" alt="Doing List icon" onerror="this.style.display='none';this.parentElement.querySelector('.icon-fallback').style.display='flex'">
+            <div class="icon-fallback" style="display:none;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="32" height="32">
+                <circle cx="12" cy="12" r="9"/>
+                <polyline points="8 12.5 11 15.5 16.5 9.5"/>
+              </svg>
+            </div>
+          </div>
+          <span class="app-selector-name">Doing List</span>
+        </button>
       </div>
     </div>
 
@@ -444,6 +456,102 @@
         Email: <a href="mailto:salmanahmad@berkeley.edu">salmanahmad@berkeley.edu</a>
       </p>
     </div>
+
+    <!-- Doing List -->
+    <div id="policy-doing-list" class="app-policy" style="display:none;">
+      <button class="policy-back" onclick="showSelector()" aria-label="Back to app list">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+          <line x1="19" y1="12" x2="5" y2="12"/>
+          <polyline points="12 19 5 12 12 5"/>
+        </svg>
+        All Apps
+      </button>
+
+      <h2 class="policy-app-title">Doing List — Privacy Policy</h2>
+      <p class="policy-date">Effective Date: November 28, 2026 &middot; Last Updated: November 28, 2026</p>
+
+      <p>This Privacy Policy describes how Doing List ("the App") handles your information. Doing List is developed by Salman Ahmad ("we," "our"). The short version: <strong>your tasks stay on your device and in your own iCloud, and we cannot read them.</strong> There is no account. There are no ads, and we never sell data. The App does send usage statistics, which say which features get used and never what you wrote, and you can switch them off.</p>
+
+      <h3>1. Information We Collect</h3>
+      <p>The App collects one kind of information: usage statistics, through Google Analytics for Firebase (see Section 5). They are made of:</p>
+      <ul>
+        <li><strong>What was used.</strong> Which screens were opened and which features were used: for example that a task was added, finished, moved or let go; that a day was planned or closed; that a focus timer was started and roughly how long it ran; that voice capture or the step-suggestion feature was used.</li>
+        <li><strong>The shape of things, never their content.</strong> For a task, only facts such as whether it had a time, a repeat, a duration or a deadline, and whether it was typed or spoken. Counts and durations are sent as numbers or ranges.</li>
+        <li><strong>Choices from fixed lists.</strong> The theme and companion you chose, the reasons you picked during setup, the length of your day and your typical task length, which settings are switched on or off, and whether you allowed notifications or connected your calendar.</li>
+        <li><strong>Purchases.</strong> That the purchase screen was shown, which plan was selected, and whether a purchase or free trial was started, cancelled or restored, including the product and its price. We never receive payment details.</li>
+        <li><strong>Technical information collected automatically by the analytics software.</strong> A randomly generated identifier for this installation of the App, the device model, operating system and app version, language, a general location (country or region) derived from your IP address, and when the App was first opened and used.</li>
+      </ul>
+      <p>These statistics are <strong>not linked to your name, email address or Apple Account</strong>; we do not have any of those. The App does not use the Apple Advertising Identifier (IDFA) or the vendor identifier (IDFV), does not track you across other companies' apps or websites, and does not use this information for advertising.</p>
+      <p><strong>What is never collected:</strong> the titles, notes or steps of your tasks; the names of your lists or tags; your calendar events or reminders; anything you say to the microphone, as audio or as text; your contacts; your precise location.</p>
+      <p><strong>You can turn usage statistics off</strong> at any time in the App under Settings &gt; Your data &gt; Share usage statistics. When it is off, nothing is collected.</p>
+
+      <h3>2. What Stays on Your Device and in Your iCloud</h3>
+      <ul>
+        <li><strong>Your tasks.</strong> Tasks, lists, tags, notes, steps, focus sessions and your daily plans are stored on your device.</li>
+        <li><strong>iCloud sync.</strong> If iCloud sync is on (it is by default when you are signed in to iCloud), the same data is kept in your private iCloud database using Apple's CloudKit, so it appears on your other devices. It is your iCloud storage: we cannot access it. You can turn sync off in the App's Settings.</li>
+        <li><strong>Your settings.</strong> Your theme, companion, wardrobe, day's hours and reminder choices are stored on your device.</li>
+      </ul>
+
+      <h3>3. Permissions</h3>
+      <p>Each permission is optional and can be changed in your device's Settings.</p>
+      <ul>
+        <li><strong>Notifications:</strong> Reminders for tasks with a time, deadline alerts, the optional morning and evening nudges, and, if you start a free trial, one reminder before it ends.</li>
+        <li><strong>Calendar:</strong> If you connect it, the App reads today's and upcoming events on your device to work out your free time and show events beside your tasks. It never changes your calendar, and your events are not sent anywhere. You can disconnect it in the App's Settings.</li>
+        <li><strong>Reminders:</strong> Only when you choose "Import from Reminders", to copy your reminders into the App. Your reminders are not changed.</li>
+        <li><strong>Microphone and Speech Recognition:</strong> Only while you are adding a task by voice. Your speech is turned into text on your device when it can be; when it cannot, it is sent to Apple's speech recognition service, under Apple's privacy policy. We never receive the audio or the text.</li>
+      </ul>
+
+      <h3>4. On-Device Features</h3>
+      <ul>
+        <li><strong>Step suggestions ("Break it down"):</strong> Uses Apple's on-device language model on devices that support Apple Intelligence. The task you ask about is processed on your device and is not sent to us or to anyone else.</li>
+        <li><strong>Widgets, Live Activities, Siri and Shortcuts:</strong> If you use them, your task titles appear on your Home Screen and Lock Screen and are available to Siri and Shortcuts, as you would expect. This is handled by iOS on your device.</li>
+      </ul>
+
+      <h3>5. Third-Party Services</h3>
+      <h4>A. Google Analytics for Firebase (Google LLC)</h4>
+      <p>The usage statistics in Section 1 are collected with Google Analytics for Firebase and processed on Google's servers on our behalf. In Doing List it is set up so that it:</p>
+      <ul>
+        <li>Assigns a randomly generated app-instance identifier that is not linked to your identity or Apple Account</li>
+        <li>Does <strong>not</strong> collect the Apple Advertising Identifier (IDFA) or the vendor identifier (IDFV)</li>
+        <li>Has advertising-personalization signals switched off, and is not linked to any advertising account</li>
+      </ul>
+      <p>For more information, see Google's Privacy Policy at <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a>, how Google uses information from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer" target="_blank">https://policies.google.com/technologies/partner-sites</a>, and Firebase's privacy documentation at <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">https://firebase.google.com/support/privacy</a>.</p>
+      <h4>B. Apple Services</h4>
+      <ul>
+        <li><strong>iCloud/CloudKit:</strong> Syncs your tasks through your private iCloud database, as described in Section 2.</li>
+        <li><strong>App Store (StoreKit):</strong> All purchases are processed by Apple. We do not receive or store payment details.</li>
+        <li><strong>Speech recognition and Apple Intelligence:</strong> As described in Sections 3 and 4.</li>
+      </ul>
+      <p>The App contains no advertising software and no other third-party code that collects data.</p>
+
+      <h3>6. Data Sharing</h3>
+      <p>We do not sell your information, and we do not share it for advertising. The usage statistics are processed by Google as described above. We may disclose information if the law requires it.</p>
+
+      <h3>7. Purchases</h3>
+      <p>Purchases are handled by Apple. Besides the purchase events described in Section 1, like every developer we can see aggregated, non-identifying statistics that Apple provides through App Store Connect, such as the number of downloads and sales, and crash reports from users who have chosen in their device settings to share analytics with app developers.</p>
+
+      <h3>8. Data Retention and Deletion</h3>
+      <ul>
+        <li><strong>Your tasks:</strong> We hold none of them, so there is nothing for us to delete. Deleting the App removes its data from the device. Data synced to iCloud can be removed in your device's Settings under your name &gt; iCloud &gt; Manage Account Storage. You can save a copy first with Settings &gt; Export everything in the App.</li>
+        <li><strong>Usage statistics:</strong> Kept by Google Analytics for no longer than 14 months and then deleted automatically; totals that identify no one may be kept longer. To stop collection, switch off "Share usage statistics". Because the statistics are tied only to a random identifier and not to your name or contact details, we generally cannot tell which are yours; deleting the App discards the identifier.</li>
+      </ul>
+
+      <h3>9. Children's Privacy</h3>
+      <p>The App is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+
+      <h3>10. Your Privacy Rights</h3>
+      <p>Depending on where you live, you may have the right to access, correct or delete personal information, and to object to or restrict its use. You can stop the collection of usage statistics at any time in the App's Settings, and you can contact us with any request using the details below. We do not sell personal information.</p>
+
+      <h3>11. Changes to This Privacy Policy</h3>
+      <p>If this policy changes, the new version will appear here with a new effective date.</p>
+
+      <h3>12. Contact Us</h3>
+      <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+      <p>
+        Salman Ahmad<br>
+        Email: <a href="mailto:salmanahmad@berkeley.edu">salmanahmad@berkeley.edu</a>
+      </p>
+    </div>
   </main>
 
   <footer class="footer">
@@ -479,7 +587,7 @@
       document.querySelector('.legal .updated').textContent = '';
     }
 
-    // privacy.html#quantum (or #fox-reader, #after-a-death) opens that app's policy directly, so each app can link to its own.
+    // privacy.html#quantum (or #fox-reader, #after-a-death, #doing-list) opens that app's policy directly, so each app can link to its own.
     function route() {
       var appId = location.hash.replace('#', '');
       if (appId && document.getElementById('policy-' + appId)) {
